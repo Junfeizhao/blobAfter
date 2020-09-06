@@ -9,6 +9,7 @@
     "koa-router": "^9.4.0",
     "koa-session": "^6.0.0",
     "multer": "^1.4.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.11"
   }
 }
