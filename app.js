@@ -8,7 +8,6 @@ const bodyParser = require('koa-bodyparser')
 const compress = require('koa-compress');
 const session = require('koa-session');
 const staticServer = require('koa-static');
-const htmlRender = require("koa-html-render") // 引入koa-html-render
 //session配置
 app.keys = ['some secret hurr'];
 const CONFIG = {
@@ -32,7 +31,7 @@ app.use(session(CONFIG, app));
 const options = { threshold: 2048 };
 app.use(compress(options));
 app.use(staticServer(__dirname, 'public'));
-// app.use(htmlRender);
+
 app.use(bodyParser())
 app.use(cors({
   origin: "*",
